@@ -6,7 +6,7 @@
 /*   By: ikryvenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 19:08:04 by ikryvenk          #+#    #+#             */
-/*   Updated: 2016/12/04 14:41:36 by ikryvenk         ###   ########.fr       */
+/*   Updated: 2016/12/11 16:00:14 by ikryvenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,8 @@ int		ft_strequ(char const *s1, char const *s2)
 			if (*(s1++) != *(s2++))
 				return (0);
 		}
+		if (!*s1 && !*s2)
+			return (1);
 	}
-	else
-		return (0);
-	if (!*s1 && !*s2)
-		return (1);
 	return (0);
 }

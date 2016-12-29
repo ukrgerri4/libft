@@ -6,7 +6,7 @@
 /*   By: ikryvenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 16:08:51 by ikryvenk          #+#    #+#             */
-/*   Updated: 2016/12/02 16:46:50 by ikryvenk         ###   ########.fr       */
+/*   Updated: 2016/12/11 15:49:32 by ikryvenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memalloc(size_t size)
 	void	*tmp;
 	size_t	i;
 
-	tmp = malloc(size);
+	tmp = (void*)malloc(sizeof(void) * size);
 	if (!tmp)
 		return (NULL);
 	i = 0;

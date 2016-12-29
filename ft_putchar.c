@@ -6,18 +6,13 @@
 /*   By: ikryvenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 00:18:17 by ikryvenk          #+#    #+#             */
-/*   Updated: 2016/12/02 18:34:43 by ikryvenk         ###   ########.fr       */
+/*   Updated: 2016/12/11 16:00:33 by ikryvenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_putchar(int c)
+void		ft_putchar(char c)
 {
-	unsigned char b;
-
-	b = c;
-	if ((write(1, &b, 1) < 0))
-		return (0);
-	return (c);
+	write(1, &c, 1);
 }

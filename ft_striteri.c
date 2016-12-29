@@ -6,7 +6,7 @@
 /*   By: ikryvenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 18:37:44 by ikryvenk          #+#    #+#             */
-/*   Updated: 2016/12/04 14:45:09 by ikryvenk         ###   ########.fr       */
+/*   Updated: 2016/12/11 16:03:30 by ikryvenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	unsigned int index;
+	int index;
 
 	index = 0;
 	if (s && f)
 	{
 		while (*s)
-		{
 			f(index++, s++);
-		}
 	}
 }

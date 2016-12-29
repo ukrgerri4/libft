@@ -6,7 +6,7 @@
 /*   By: ikryvenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 21:28:23 by ikryvenk          #+#    #+#             */
-/*   Updated: 2016/12/02 19:55:02 by ikryvenk         ###   ########.fr       */
+/*   Updated: 2016/12/11 16:08:04 by ikryvenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,14 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*tmp;
-	size_t	len;
 
 	if (s1 && s2)
 	{
-		len = ft_strlen(s1) + ft_strlen(s2);
-		tmp = ft_strnew(len);
+		tmp = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
 		if (!tmp)
 			return (NULL);
-		len = 0;
-		while (*s1)
-			tmp[len++] = *(s1++);
-		while (*s2)
-			tmp[len++] = *(s2++);
-		tmp[len] = 0;
+		tmp = ft_strcpy(tmp, s1);
+		tmp = ft_strcat(tmp, s2);
 		return (tmp);
 	}
 	return (NULL);

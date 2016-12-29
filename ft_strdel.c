@@ -6,7 +6,7 @@
 /*   By: ikryvenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 18:19:09 by ikryvenk          #+#    #+#             */
-/*   Updated: 2016/12/02 17:00:24 by ikryvenk         ###   ########.fr       */
+/*   Updated: 2016/12/11 15:55:31 by ikryvenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ void	ft_strdel(char **as)
 {
 	if (!as)
 		return ;
-	free(*as);
+	free((char*)*as);
 	*as = NULL;
 }

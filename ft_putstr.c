@@ -6,7 +6,7 @@
 /*   By: ikryvenk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 00:50:26 by ikryvenk          #+#    #+#             */
-/*   Updated: 2016/12/02 16:59:04 by ikryvenk         ###   ########.fr       */
+/*   Updated: 2016/12/11 15:43:52 by ikryvenk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_putstr(char const *s)
 	if (s)
 	{
 		while (*s)
-			ft_putchar(*(s++));
+			ft_putchar((char)*(s++));
 	}
 }
